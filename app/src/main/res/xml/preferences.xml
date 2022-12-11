@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent">
+
+    <PreferenceCategory
+        android:title="General"
+        >
+        <Preference
+            android:title="Reset Enigma machine"
+            android:key="pref_reset_button"
+            android:summary="Click to reset"/>
+        <!--<ListPreference
+            android:title="Daily settings format"
+            android:key="daily_settings_format"
+            android:summary="%s"
+            android:entries="@array/daily_settings_formats_names"
+            android:entryValues="@array/daily_settings_formats"/>
+        <ListPreference
+            android:title="Daily settings language"
+            android:key="daily_settings_format"
+            android:summary="%s"
+            android:entries="@array/daily_settings_languages_names"
+            android:entryValues="@array/daily_settings_languages"
+            android:defaultValue="English" />-->
+    </PreferenceCategory>
+    <!--<PreferenceCategory
+        android:title="Reflector"
+        >
+        <ListPreference
+            android:key="refl"
+            android:summary="%s"
+            android:title="Reflector"
+            android:entries="@array/reflectors_names"
+            android:entryValues="@array/reflectors"/>
+    </PreferenceCategory>-->
+    <PreferenceCategory
+        android:title="Rotors"
+        >
+        <ListPreference
+            android:key="rotor_1"
+            android:summary="%s"
+            android:title="First rotor"
+            android:entries="@array/rotors"
+            android:entryValues="@array/rotors"/>
+        <ListPreference
+            android:key="rotor_2"
+            android:summary="%s"
+            android:title="Second rotor"
+            android:entries="@array/rotors"
+            android:entryValues="@array/rotors"/>
+        <ListPreference
+            android:key="rotor_3"
+            android:summary="%s"
+            android:title="Third rotor"
+            android:entries="@array/rotors"
+            android:entryValues="@array/rotors"/>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="Rotor's rings"
+        >
+        <ListPreference
+            android:key="rotor_1_ring"
+            android:summary="%s"
+            android:title="First rotor's ring"
+            android:entries="@array/alphabet"
+            android:entryValues="@array/alphabet"/>
+        <ListPreference
+            android:key="rotor_2_ring"
+            android:summary="%s"
+            android:title="Second rotor's ring"
+            android:entries="@array/alphabet"
+            android:entryValues="@array/alphabet"/>
+        <ListPreference
+            android:key="rotor_3_ring"
+            android:summary="%s"
+            android:title="Third rotor's ring"
+            android:entries="@array/alphabet"
+            android:entryValues="@array/alphabet"/>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="Rotor's positions"
+        >
+        <ListPreference
+            android:key="rotor_1_pos"
+            android:summary="%s"
+            android:title="First rotor's position"
+            android:entries="@array/alphabet"
+            android:entryValues="@array/alphabet"/>
+        <ListPreference
+            android:key="rotor_2_pos"
+            android:summary="%s"
+            android:title="Second rotor's position"
+            android:entries="@array/alphabet"
+            android:entryValues="@array/alphabet"/>
+        <ListPreference
+            android:key="rotor_3_pos"
+            android:summary="%s"
+            android:title="Third rotor's position"
+            android:entries="@array/alphabet"
+            android:entryValues="@array/alphabet"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>

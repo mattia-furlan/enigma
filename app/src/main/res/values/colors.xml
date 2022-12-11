@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#515353</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorGrey">#535353</color>
+    <color name="background">#535353</color>
+    <color name="daily_settings_text_color">#ababab</color>
+</resources>

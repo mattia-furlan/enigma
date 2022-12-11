@@ -1,0 +1,75 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="com.furlan.mattia.enigma.DailySettingsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/paper">
+
+        <Button
+            android:id="@+id/buttonApplySettings"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/daily_settings_button"
+            android:elevation="24dp"
+            android:enabled="true"
+            android:onClick="clicked"
+            android:padding="5dp"
+            android:text="Set machine"
+            android:textColor="@color/daily_settings_text_color"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <Button
+            android:id="@+id/buttonGetDailySettings"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:onClick="clicked"
+            android:text="Get daily settings"
+            android:padding="5dp"
+            android:textColor="@color/daily_settings_text_color"
+            android:background="@drawable/daily_settings_button"
+            android:layout_marginBottom="4dp"
+            app:layout_constraintBottom_toTopOf="@+id/buttonApplySettings"
+            android:layout_marginRight="8dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/textViewDailySettings"
+            app:layout_constraintHorizontal_bias="0.502"/>
+
+        <TextView
+            android:id="@+id/textViewDailySettings"
+            android:layout_width="0dp"
+            android:layout_height="360dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="38dp"
+            android:fontFamily="monospace"
+            android:padding="10dp"
+            android:textSize="20sp"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+    </android.support.constraint.ConstraintLayout>
+
+</FrameLayout>
